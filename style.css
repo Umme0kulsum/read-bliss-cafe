@@ -154,3 +154,47 @@ img:hover {
 .map-section h2 {
   color: #4b2e2e;
 }
+/* Center the form in the middle of the page */
+.feedback-container {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: 60vh;        /* adjust as needed */
+  padding: 20px;
+}
+
+/* Form styling */
+.feedback-form {
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback-form button {
+  align-self: flex-start; /* button fits content */
+  background-color: #6b4f4f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #5a3f3f;
+}
+
