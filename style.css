@@ -1,0 +1,156 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-size: cover;
+  background-color: rgb(216, 207, 195);
+  margin: 0;
+  padding: 0;
+  color: #000303;
+  background-repeat: calc(50,50);
+}
+
+header, footer {
+  background-color: #f7f7f8;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #010804;
+  font-weight: normal;
+}
+
+nav a:hover {
+  color: #331d91;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+#bg-video {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* limits vertical size */
+  object-fit: cover;
+}
+/* About Section Layout */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+}
+
+/* Left Box */
+.about-text {
+  flex: 1;
+  background: #f8f8f8;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Right Box */
+.about-slider {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Slideshow */
+.slides {
+  display: flex;
+  width: 300%;
+  animation:slide 30s infinite ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+/* Services Section Layout */
+.services-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 40px;
+}
+
+/* Left Side */
+.services-text {
+  flex: 1;
+}
+
+/* Service Cards */
+.service-card {
+  background: #f8f8f8;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  background: #d4a373;
+  color: white;
+  transform: translateX(10px);
+}
+
+/* Right Side Video */
+.services-video {
+  flex: 1;
+}
+
+.services-video video {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-section {
+    flex-direction: column;
+  }
+
+  .services-video video {
+    height: 250px;
+  }
+}
+.map-section {
+  margin: 60px 20px;
+  text-align: center;
+}
+
+.map-section h2 {
+  color: #4b2e2e;
+}
